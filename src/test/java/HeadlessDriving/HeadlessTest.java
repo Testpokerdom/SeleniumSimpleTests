@@ -49,4 +49,18 @@ public class HeadlessTest {
         recieveCookies(driver);
 
     }
+
+    @Test
+    public void loginToGitHubAccount(){
+
+        MainPage main = new MainPage(driver);
+
+        goToUrl(driver,"https://github.com/");
+        clickButton(main.buttonSignInGitHub);
+        sendKeysWebElements(main.fieldLoginGitHub,"ViktorBibik",main.fieldPasswordGitHub,"deadmananor_1");
+        clickButton(main.getButtonSignInLoginPopUpGitHub);
+        Assert.assertEquals(main.linkPullRequests.getText(), "Pull requests");
+        recievePageTitle(driver);
+        recieveCookies(driver);
+    }
 }

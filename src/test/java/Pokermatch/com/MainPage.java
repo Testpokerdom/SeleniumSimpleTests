@@ -13,7 +13,7 @@ public class MainPage {
 
     }
 
-    // Main page buttons Login/Registration and Language bar
+    // Main page buttons Login/Registration/Language bar/Confirm ragistration pop up in header
     @FindBy (xpath = "//a[@href='#login']")
     public WebElement buttonLoginBeta;
     @FindBy (xpath = "//div[@class='head__col']//a[@href='#login']")
@@ -22,6 +22,8 @@ public class MainPage {
     public WebElement buttonRegistrationBeta;
     @FindBy (id = "languages")
     public WebElement dropdouwnLanguages;
+    @FindBy (xpath = "//div[@class='user_notice_hint_wrapper event_message_wrapper']//div[@class='event_message']")
+    public WebElement confirmRegistrationPopUp;
 
     // Login form pop-up
     @FindBy(xpath = "//div[@class='modala__body']//input[@name='login']")
@@ -32,28 +34,9 @@ public class MainPage {
     public WebElement linkRemaindPassword;
     @FindBy(xpath = "//div[@class='modala-submit']/button[@class='modala-button']")
     public WebElement buttonSignIn;
+    @FindBy (xpath = "//div[@class='modala__field modala__field_password']//div[1]")
+    public WebElement errorMessageLogin;
 
-    // Registration form pop-up
-    @FindBy(xpath = "")
-    public WebElement fieldEmailRegistration;
-    @FindBy(xpath = "")
-    public WebElement fieldLoginRegistration;
-    @FindBy(xpath = "")
-    public WebElement fieldPasswordRegistration;
-    @FindBy(xpath = "")
-    public WebElement radiobuttonUAH_Registration;
-    @FindBy(xpath = "")
-    public WebElement radiobuttonUSD_Registration;
-    @FindBy(xpath = "")
-    public WebElement radiobuttonEUR_Registration;
-    @FindBy(xpath = "")
-    public WebElement checkBoxIAgreeWithTermsAndConditions_Registration;
-    @FindBy(xpath = "")
-    public WebElement checkBoxIAgreeToRecieveEmailSMS_Registration;
-    @FindBy(xpath = "")
-    public WebElement fieldCapchaRegistration;
-    @FindBy(xpath = "")
-    public WebElement buttonSignUpRegistration;
 
     // Main page header elements
     @FindBy(xpath = "//div[@class='top_menu__inner']//a[@href='https://beta.pokermatch.com/en/news']")
