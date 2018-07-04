@@ -14,7 +14,7 @@ public class MainPage {
     }
 
     // Main page buttons Login/Registration and Language bar
-    @FindBy (xpath = "//div[@class='head__inner']//a[@href='#login']/span")
+    @FindBy (xpath = "//a[@href='#login']")
     public WebElement buttonLoginBeta;
     @FindBy (xpath = "//div[@class='head__col']//a[@href='#login']")
     public WebElement buttonLoginProd;
@@ -34,6 +34,26 @@ public class MainPage {
     public WebElement buttonSignIn;
 
     // Registration form pop-up
+    @FindBy(xpath = "")
+    public WebElement fieldEmailRegistration;
+    @FindBy(xpath = "")
+    public WebElement fieldLoginRegistration;
+    @FindBy(xpath = "")
+    public WebElement fieldPasswordRegistration;
+    @FindBy(xpath = "")
+    public WebElement radiobuttonUAH_Registration;
+    @FindBy(xpath = "")
+    public WebElement radiobuttonUSD_Registration;
+    @FindBy(xpath = "")
+    public WebElement radiobuttonEUR_Registration;
+    @FindBy(xpath = "")
+    public WebElement checkBoxIAgreeWithTermsAndConditions_Registration;
+    @FindBy(xpath = "")
+    public WebElement checkBoxIAgreeToRecieveEmailSMS_Registration;
+    @FindBy(xpath = "")
+    public WebElement fieldCapchaRegistration;
+    @FindBy(xpath = "")
+    public WebElement buttonSignUpRegistration;
 
     // Main page header elements
     @FindBy(xpath = "//div[@class='top_menu__inner']//a[@href='https://beta.pokermatch.com/en/news']")
@@ -53,7 +73,7 @@ public class MainPage {
     @FindBy(xpath = "//div[@class='tsf-p']//input[@name='btnK']")
     public WebElement buttonSearchOnGooglePage;
 
-    // <ain page after autorization - NickName for current player
+    // Main page after autorization - NickName for current player
     @FindBy (xpath = "//div[@class='info-list__item info-list__item_type_nick']//span[@class='info-list__item-label']")
     public WebElement elementNickName;
 
@@ -74,12 +94,11 @@ public class MainPage {
     public WebElement linkPullRequests;
 
 
-    public void loginAsExistingUser(String login, String password){
+    public void enterLoginAndPassword(String login, String password){
         fieldEmailLogin.clear();
         fieldEmailLogin.sendKeys(login);
         fieldPassword.clear();
         fieldPassword.sendKeys(password);
-        buttonSignIn.click();
     }
 
     public void sendTextToSearchField(String text){

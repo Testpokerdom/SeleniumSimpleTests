@@ -1,15 +1,21 @@
 package Pokermatch.com;
 
 import org.openqa.selenium.By;
+import org.openqa.selenium.Cookie;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.WebElement;
+import org.openqa.selenium.chrome.ChromeOptions;
+import org.openqa.selenium.remote.CapabilityType;
+import org.openqa.selenium.remote.DesiredCapabilities;
 import org.openqa.selenium.support.ui.ExpectedConditions;
 import org.openqa.selenium.support.ui.WebDriverWait;
 import org.testng.Assert;
 
 import java.util.List;
+import java.util.Set;
 
 public class WebLibrary{
+    public static WebDriver driver = null;
 
     public static void goToUrl(WebDriver driver, String url){
 
@@ -38,15 +44,13 @@ public class WebLibrary{
 
     }
 
-    public static void setTextIntoWebElements(WebElement element1, String login, WebElement element2, String password ){
+    public static void sendKeysWebElements(WebElement element1, String login, WebElement element2, String password ){
 
-        element1.click();
         clearTextField(element1);
         element1.sendKeys(login);
-        element2.click();
         clearTextField(element2);
         element2.sendKeys(password);
-        element2.submit();
+        //element2.submit();
 
     }
 
@@ -90,6 +94,28 @@ public class WebLibrary{
     public static void waitElementPresent(WebDriver driver,long seconds,WebElement element) {
         WebDriverWait wait = new WebDriverWait(driver, seconds);
         wait.until(ExpectedConditions.visibilityOf(element));
+    }
+
+    public static void cleanCash(){
+        DesiredCapabilities capabilities = DesiredCapabilities.chrome();
+        capabilities.setCapability(CapabilityType.ForSeleniumServer.ENSURING_CLEAN_SESSION, true);
+
+        ChromeOptions opts = new ChromeOptions();
+        opts.addArguments("start-maximized");
+        capabilities.setCapability(ChromeOptions.CAPABILITY, opts);
+    }
+
+    public static Set<Cookie> recieveCookies(WebDriver driver){
+        Set<Cookie> cookies = driver.manage().getCookies();
+        System.out.println("Cookies from website: " + cookies);
+        return cookies;
+    }
+
+    public static String recievePageTitle(WebDriver driver){
+
+        String pageTitle = driver.getTitle();
+        System.out.println("Page title is " + pageTitle);
+        return pageTitle;
     }
 
 }
