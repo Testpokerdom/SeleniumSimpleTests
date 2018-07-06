@@ -1,4 +1,4 @@
-package Pokermatch.com;
+package PokermatchTestNGTests;
 
 import org.openqa.selenium.By;
 import org.openqa.selenium.Cookie;
@@ -15,7 +15,6 @@ import java.util.List;
 import java.util.Set;
 
 public class WebLibrary{
-    public static WebDriver driver = null;
 
     public static void goToUrl(WebDriver driver, String url){
 

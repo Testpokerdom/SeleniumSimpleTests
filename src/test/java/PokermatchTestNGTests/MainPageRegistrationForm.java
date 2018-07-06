@@ -1,4 +1,4 @@
-package Pokermatch.com;
+package PokermatchTestNGTests;
 
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.WebElement;
@@ -22,9 +22,9 @@ public class MainPageRegistrationForm extends MainPage{
     // Registration form pop-up
     @FindBy(xpath = "//div[@id='registration']//input[@name='email']")
     public WebElement fieldEmailRegistration;
-    @FindBy(id = "login")
+    @FindBy(xpath = "//input[@class='modala__input modala__login']")
     public WebElement fieldLoginRegistration;
-    @FindBy(xpath = "//div[@class='modala__field modala__field_password']//input[@class='modala__input password_control']")
+    @FindBy(xpath = "/html[1]/body[1]/div[6]/div[1]/div[1]/div[2]/form[1]/div[3]/input[2]")
     public WebElement fieldPasswordRegistration;
     @FindBy(xpath = "")
     public WebElement radiobuttonUAH_Registration;

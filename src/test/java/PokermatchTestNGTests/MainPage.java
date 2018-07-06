@@ -1,4 +1,4 @@
-package Pokermatch.com;
+package PokermatchTestNGTests;
 
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.WebElement;
@@ -16,8 +16,10 @@ public class MainPage {
     // Main page buttons Login/Registration/Language bar/Confirm ragistration pop up in header
     @FindBy (xpath = "//a[@href='#login']")
     public WebElement buttonLoginBeta;
-    @FindBy (xpath = "//div[@class='head__col']//a[@href='#login']")
-    public WebElement buttonLoginProd;
+    @FindBy (xpath = "/html/body/div[3]/section/article/div/div[2]/a[2]/span/span")
+    public WebElement buttonLogOutBeta;
+    //@FindBy (xpath = "//div[@class='head__col']//a[@href='#login']")
+    //public WebElement buttonLoginProd;
     @FindBy(xpath = "//div[@class='head__inner']//a[@href='#registration']")
     public WebElement buttonRegistrationBeta;
     @FindBy (id = "languages")
@@ -77,7 +79,7 @@ public class MainPage {
     public WebElement linkPullRequests;
 
 
-    public void enterLoginAndPassword(String login, String password){
+    public void fillLoginForm(String login, String password){
         fieldEmailLogin.clear();
         fieldEmailLogin.sendKeys(login);
         fieldPassword.clear();
@@ -85,6 +87,7 @@ public class MainPage {
     }
 
     public void sendTextToSearchField(String text){
+
         fieldSearchOnGooglePage.sendKeys(text);
     }
 
