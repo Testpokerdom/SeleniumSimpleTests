@@ -1,4 +1,4 @@
-package PokermatchTestNGTests;
+package PokerMatchTestNGTests;
 
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.firefox.FirefoxDriver;
@@ -7,8 +7,8 @@ import org.testng.annotations.*;
 
 import java.util.concurrent.TimeUnit;
 
-import static PokermatchTestNGTests.WebLibrary.cleanCash;
-import static PokermatchTestNGTests.WebLibrary.goToUrl;
+import static PokerMatchTestNGTests.WebLibrary.cleanCash;
+import static PokerMatchTestNGTests.WebLibrary.goToUrl;
 
 public class TestsForRegistration {
     public WebDriver driver;

@@ -1,6 +1,6 @@
 package HeadlessDriving;
 
-import PokermatchTestNGTests.MainPage;
+import PokerMatchTestNGTests.MainPage;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.chrome.ChromeDriver;
 import org.openqa.selenium.chrome.ChromeOptions;
@@ -10,9 +10,9 @@ import org.testng.annotations.Test;
 
 import java.util.concurrent.TimeUnit;
 
-import static PokermatchTestNGTests.WebLibrary.*;
-import static PokermatchTestNGTests.WebLibrary.clickButton;
-import static PokermatchTestNGTests.WebLibrary.recieveCookies;
+import static PokerMatchTestNGTests.WebLibrary.*;
+import static PokerMatchTestNGTests.WebLibrary.clickButton;
+import static PokerMatchTestNGTests.WebLibrary.recieveCookies;
 
 
 public class HeadlessTest {

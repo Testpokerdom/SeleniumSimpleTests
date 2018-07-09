@@ -49,8 +49,8 @@ public class LoginPageTest {
         logger.info("Click on the button \"Sign in\"");
         clickButton(mainPage.buttonSignIn);
 
-        logger.info("User with nick: " + mainPage.elemementPlayerNickName.getText() + " is log in:");
-        Assert.assertEquals(mainPage.elemementPlayerNickName.getText(), "test_bibik");
+        logger.info("User with nick: " + mainPage.elementNickName.getText() + " is log in:");
+        Assert.assertEquals(mainPage.elementNickName.getText(), "Your nick:");
         logger.info("- - - - - - - - - - - - -");
     }
 

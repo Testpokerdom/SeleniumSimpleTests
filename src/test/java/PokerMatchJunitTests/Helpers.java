@@ -8,18 +8,22 @@ import org.openqa.selenium.support.ui.WebDriverWait;
 public class Helpers {
 
     public static void goToUrl(WebDriver driver, String url){
+
         driver.get(url);
     }
 
     public static void clickButton(WebElement button){
+
         button.click();
     }
 
     public static void clickElement(WebElement element){
+
         element.click();
     }
 
     public static void clearTextField(WebElement textField){
+
         textField.clear();
     }
 

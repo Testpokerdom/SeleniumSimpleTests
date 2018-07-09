@@ -1,21 +1,30 @@
-2018-07-06 15:39:47,099  INFO [main] LoginPageTest:31 - Open website: beta.pokermatch.com
- 2018-07-06 15:39:50,876  INFO [main] LoginPageTest:42 - Running test - "test_1_loginValidUser"
- 2018-07-06 15:39:50,877  INFO [main] LoginPageTest:43 - Click on the button "Login"
- 2018-07-06 15:39:50,982  INFO [main] LoginPageTest:46 - Enter correct Login and Password to Login pop-up
- 2018-07-06 15:39:51,140  INFO [main] LoginPageTest:49 - Click on the button "Sign in"
- 2018-07-06 15:40:08,079  INFO [main] LoginPageTest:31 - Open website: beta.pokermatch.com
- 2018-07-06 15:40:12,767  INFO [main] LoginPageTest:59 - Running test - "test_2_loginInvalidUser"
- 2018-07-06 15:40:12,768  INFO [main] LoginPageTest:60 - Click on the button "Login"
- 2018-07-06 15:40:12,862  INFO [main] LoginPageTest:63 - Enter incorrect Login and correct Password to Login pop-up
- 2018-07-06 15:40:12,988  INFO [main] LoginPageTest:66 - Click on the button "Sign in"
- 2018-07-06 15:40:13,236  INFO [main] LoginPageTest:69 - Invalid user is not log in
- 2018-07-06 15:40:13,262  INFO [main] LoginPageTest:71 - - - - - - - - - - - - - -
- 2018-07-06 15:40:20,310  INFO [main] LoginPageTest:31 - Open website: beta.pokermatch.com
- 2018-07-06 15:40:24,290  INFO [main] LoginPageTest:76 - Running test - "test_3_emptyFieldsInLoginForm"
- 2018-07-06 15:40:24,290  INFO [main] LoginPageTest:77 - Click on the button "Login"
- 2018-07-06 15:40:24,377  INFO [main] LoginPageTest:80 - Clear email field 
- 2018-07-06 15:40:24,410  INFO [main] LoginPageTest:83 - Clear password field 
- 2018-07-06 15:40:24,427  INFO [main] LoginPageTest:86 - Click on the button "Sign in"
- 2018-07-06 15:40:24,675  INFO [main] LoginPageTest:89 - login with empty "email" and "password" fields imposible
- 2018-07-06 15:40:24,705  INFO [main] LoginPageTest:91 - - - - - - - - - - - - - -
+2018-07-09 16:59:35,053  INFO [main] TestsForSignIn:38 - Running test - "testLoginExistingUser"
+ 2018-07-09 16:59:35,057  INFO [main] TestsForSignIn:39 - Open website: beta.pokermatch.com
+ 2018-07-09 16:59:39,184  INFO [main] TestsForSignIn:42 - Click on the button "Login"
+ 2018-07-09 16:59:39,279  INFO [main] TestsForSignIn:45 - Enter correct Login and Password to Login form
+ 2018-07-09 16:59:39,411  INFO [main] TestsForSignIn:48 - Click on the button "Sign in"
+ 2018-07-09 16:59:40,713  INFO [main] TestsForSignIn:51 - User with nick: Your nick: is log in:
+ 2018-07-09 16:59:40,734  INFO [main] TestsForSignIn:54 - Click on the button "LogOut", user was logged out
+ 2018-07-09 16:59:42,044  INFO [main] TestsForSignIn:56 - Test "testLoginExistingUser" finished successfully
+ 2018-07-09 16:59:42,045  INFO [main] TestsForSignIn:57 - - - - - - - - - - - - - -
+ 2018-07-09 16:59:42,050  INFO [main] TestsForSignIn:64 - Running test - "testLoginExistingUser"
+ 2018-07-09 16:59:42,050  INFO [main] TestsForSignIn:65 - Open website: beta.pokermatch.com
+ 2018-07-09 16:59:42,904  INFO [main] TestsForSignIn:68 - Click on the button "Login"
+ 2018-07-09 16:59:43,001  INFO [main] TestsForSignIn:71 - Enter incorrect Login and correct Password to Login pop-up
+ 2018-07-09 16:59:43,172  INFO [main] TestsForSignIn:74 - Click on the button "Sign in"
+ 2018-07-09 16:59:43,444  INFO [main] TestsForSignIn:77 - User was not logged in, error message with textWrong username or password - has appeared
+ 2018-07-09 16:59:43,464  INFO [main] TestsForSignIn:79 - Test "testLoginUnExistingUser" finished successfully
+ 2018-07-09 16:59:43,465  INFO [main] TestsForSignIn:80 - - - - - - - - - - - - - -
+ 2018-07-09 16:59:43,467  INFO [main] TestsForSignIn:87 - Running test - "testLoginExistingUser"
+ 2018-07-09 16:59:43,468  INFO [main] TestsForSignIn:88 - Open website: beta.pokermatch.com
+ 2018-07-09 16:59:44,302  INFO [main] TestsForSignIn:91 - Click on the button "Login"
+ 2018-07-09 16:59:44,369  INFO [main] TestsForSignIn:94 - Clear Email field and leave it empty
+ 2018-07-09 16:59:44,390  INFO [main] TestsForSignIn:97 - Clear Password field and leave it empty
+ 2018-07-09 16:59:44,407  INFO [main] TestsForSignIn:100 - Click on the button "Sign in"
+ 2018-07-09 16:59:44,671  INFO [main] TestsForSignIn:103 - User was not logged in, error message with textWrong username or password - has appeared
+ 2018-07-09 16:59:44,688  INFO [main] TestsForSignIn:105 - Test "testLoginEmptyFields" finished successfully
+ 2018-07-09 16:59:44,688  INFO [main] TestsForSignIn:106 - - - - - - - - - - - - - -
+ 2018-07-09 16:59:44,690  INFO [main] TestsForSignIn:113 - Duplicated test for valid login was running
+ 2018-07-09 16:59:48,014  INFO [main] TestsForSignIn:120 - Duplicated test for valid login was running - test finished successfully
+ 2018-07-09 16:59:48,015  INFO [main] TestsForSignIn:121 - - - - - - - - - - - - - -
  

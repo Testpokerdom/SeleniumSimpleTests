@@ -1,4 +1,4 @@
-package PokermatchTestNGTests;
+package PokerMatchTestNGTests;
 
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.WebElement;
@@ -9,15 +9,6 @@ public class MainPageRegistrationForm extends MainPage{
     public MainPageRegistrationForm (WebDriver driver){
         super(driver);
     }
-
-    /*
-    public MainPageRegistrationForm(WebElement fieldEmailRegistration, WebElement fieldLoginRegistration, WebElement fieldPasswordRegistration, WebElement fieldCapchaRegistration){
-        this.fieldEmailRegistration = fieldEmailRegistration;
-        this.fieldLoginRegistration = fieldLoginRegistration;
-        this.fieldPasswordRegistration = fieldPasswordRegistration;
-        this.fieldCapchaRegistration = fieldCapchaRegistration;
-    }
-    */
 
     // Registration form pop-up
     @FindBy(xpath = "//div[@id='registration']//input[@name='email']")

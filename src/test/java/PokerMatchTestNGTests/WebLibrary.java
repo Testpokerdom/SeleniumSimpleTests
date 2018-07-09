@@ -1,4 +1,4 @@
-package PokermatchTestNGTests;
+package PokerMatchTestNGTests;
 
 import org.openqa.selenium.By;
 import org.openqa.selenium.Cookie;

@@ -1,0 +1,4 @@
+.gradle/
+HeadlessTest/*.java
+build/
+gradle/
